@@ -11,45 +11,6 @@
     ]
   },
   "files": {
-    "lib/forge-std/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1665191416132,
-      "contentHash": "962996f0e05d5218857a538a62d7c47e",
-      "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.5.0",
-      "artifacts": {
-        "DSTest": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "test.sol/DSTest.json"
-        }
-      }
-    },
     "lib/forge-std/src/Script.sol": {
       "lastModificationDate": 1665191415132,
       "contentHash": "571dde8775a6214a03d6772ee330ead5",
@@ -136,7 +97,7 @@
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1665191415132,
+      "lastModificationDate": 1665262308755,
       "contentHash": "6cab65c53a9548c2428a10697fd06dd1",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
@@ -167,12 +128,12 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Script.sol",
         "lib/forge-std/src/StdJson.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
+        "lib/forge-std/src/console2.sol",
+        "lib/solmate/lib/ds-test/src/test.sol"
       ],
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
@@ -307,9 +268,48 @@
         }
       }
     },
+    "lib/solmate/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1665260723255,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/solmate/lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "test.sol/DSTest.json"
+        }
+      }
+    },
     "script/Counter.s.sol": {
-      "lastModificationDate": 1665191413222,
-      "contentHash": "0705c52104730a78aef4aa6694175c81",
+      "lastModificationDate": 1665270242850,
+      "contentHash": "e014bac8b9c52230f7713ad4a15eb522",
       "sourceName": "script/Counter.s.sol",
       "solcConfig": {
         "settings": {
@@ -343,7 +343,8 @@
         "lib/forge-std/src/StdJson.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
+        "lib/forge-std/src/console2.sol",
+        "src/Counter.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
@@ -353,8 +354,8 @@
       }
     },
     "src/Counter.sol": {
-      "lastModificationDate": 1665191413222,
-      "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
+      "lastModificationDate": 1665267920860,
+      "contentHash": "a93de613db7dc6855d4b357089e4e202",
       "sourceName": "src/Counter.sol",
       "solcConfig": {
         "settings": {
@@ -392,8 +393,8 @@
       }
     },
     "test/Counter.t.sol": {
-      "lastModificationDate": 1665191413222,
-      "contentHash": "b1a6521ba9c61d5266bab1fc9a057d68",
+      "lastModificationDate": 1665269359510,
+      "contentHash": "28851c3901b41aacec8b232728a751a6",
       "sourceName": "test/Counter.t.sol",
       "solcConfig": {
         "settings": {
@@ -423,13 +424,13 @@
         }
       },
       "imports": [
-        "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Script.sol",
         "lib/forge-std/src/StdJson.sol",
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
         "src/Counter.sol"
       ],
       "versionRequirement": "^0.8.13",
